@@ -17,15 +17,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: "https://humanoid-robotics.github.io",
+  url: "https://humanoid-ai-robotics-book-1.vercel.app/",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/humanoid-ai-robotics-book/",
+  baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "frontend_book", // Usually your GitHub org/user name.
-  projectName: "humanoid-ai-robotics-book", // Usually your repo name.
+  projectName: "humanoid-ai-robotics-book-1", // Usually your repo name.
 
   onBrokenLinks: "throw",
 
@@ -46,21 +46,21 @@ const config: Config = {
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ["rss", "atom"],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: "warn",
+        //   onInlineAuthors: "warn",
+        //   onUntruncatedBlogPosts: "warn",
+        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -113,7 +113,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/m-ahmad-official/humanoid-ai-robotics-book.git",
           label: "GitHub",
           position: "right",
         },
@@ -169,7 +169,7 @@ const config: Config = {
             // },
             {
               label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              href: "https://github.com/m-ahmad-official/humanoid-ai-robotics-book.git",
             },
             {
               label: "LinkedIn",
