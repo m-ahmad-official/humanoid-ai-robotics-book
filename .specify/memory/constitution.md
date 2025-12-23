@@ -1,55 +1,74 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: 1.0.0 → 1.1.0
+Modified principles:
+- Spec-First AI-Native Development
+- Technical Accuracy and Correctness
+- Developer-Focused Explanations
+- Reproducible Repository
+Added sections: Book Standards, RAG Chatbot Standards, Code & Docs Standards
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md ✅ updated
+- .specify/templates/spec-template.md ✅ updated
+- .specify/templates/tasks-template.md ✅ updated
+- .specify/templates/commands/*.md ⚠ pending
+Follow-up TODOs: None
+-->
+
+# AI-Spec–Driven Book with Embedded RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Spec-First AI-Native Development
+All development must follow a specification-first approach using Spec-Kit Plus and Claude Code; Every feature and component must be defined in specifications before implementation; AI tools must be leveraged for code generation, review, and testing throughout the development lifecycle.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Technical Accuracy and Correctness
+All content and code examples must be technically accurate and verified; Code examples must be runnable or clearly labeled as illustrative; All technical claims must be verifiable and backed by appropriate sources or testing.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Developer-Focused Explanations
+All content must be written with developers as the primary audience; Explanations must be clear, practical, and include real-world use cases; Documentation must include sufficient context for developers to understand and apply concepts.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Fully Reproducible from Repository
+All book content, build processes, and deployment configurations must be fully reproducible from the repository; Anyone with access to the repository must be able to build and deploy the same site; Development and deployment environments must be clearly documented and containerized where appropriate.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Book Standards and Quality
+Content must be built using Docusaurus framework and deployed to GitHub Pages; Chapters must be modular and driven by Spec-Kit Plus specifications; Mermaid diagrams must be used where they enhance understanding of complex concepts.
 
-### [PRINCIPLE_6_NAME]
+### RAG Chatbot Integration Standards
+The embedded RAG chatbot must support both full-book and user-selected text Q&A; The stack must use OpenAI Agents/ChatKit SDK, FastAPI backend, Neon Serverless Postgres, and Qdrant Cloud; The chunking, embeddings, and retrieval pipeline must be fully documented with secure key management.
 
+## Additional Standards
 
-[PRINCIPLE__DESCRIPTION]
+### Code and Documentation Standards
+- TypeScript and Python are the preferred languages for all implementation
+- Clear repository structure with comprehensive README documentation
+- All code must include proper error handling and security considerations
+- Environment variables must be used for secure key management
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### Technology Stack Requirements
+- Book Framework: Docusaurus
+- Deployment: GitHub Pages
+- Chatbot Backend: FastAPI
+- Database: Neon Serverless Postgres
+- Vector Storage: Qdrant Cloud (Free Tier)
+- AI Integration: OpenAI Agents/ChatKit SDK
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Development Workflow
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+### Implementation Process
+- All features must start with specification in Spec-Kit Plus
+- Claude Code must be used for AI-assisted development
+- Code examples must be tested and verified before inclusion
+- All changes must maintain full reproducibility from the repository
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Quality Gates
+- All code examples must be runnable or clearly labeled
+- Technical accuracy must be verified by at least one additional reviewer
+- Deployment process must be documented and tested
+- Security considerations must be addressed for all external integrations
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All development must adhere to the specified technology stack and architectural decisions; Changes to core principles require explicit approval and documentation; All pull requests must verify compliance with both technical and content standards; The constitution supersedes all other development practices and guidelines.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.1.0 | **Ratified**: 2025-12-23 | **Last Amended**: 2025-12-23
