@@ -8,8 +8,9 @@ const rehypeKatex = require("rehype-katex");
 
 const config: Config = {
   title: "Humanoid Robotics with ROS 2",
-  tagline: "Educational Guide for AI Students",
-  favicon: "img/favicon.ico",
+  tagline:
+    "Built as a learning project by Muhammad Ahmed to explore the fundamentals of Physical AI and humanoid robotics using ROS 2.",
+  favicon: "img/logo1.png",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -75,10 +76,10 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: "Humanoid Robotics",
+      title: "Physical AI & Humanoid Robotics Book",
       logo: {
         alt: "Humanoid Robotics Logo",
-        src: "img/logo.svg",
+        src: "img/logo1.png",
       },
       items: [
         {
@@ -144,19 +145,19 @@ const config: Config = {
           ],
         },
         {
-          title: "Community",
+          title: "Panaversity",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "AI-Native",
+              href: "https://ai-native.panaversity.org/",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "GitHub",
+              href: "https://github.com/panaversity",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "YouTube",
+              href: "https://youtube.com/@panaversity",
             },
           ],
         },

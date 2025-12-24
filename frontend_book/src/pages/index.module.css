@@ -4,15 +4,78 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  height: 600px;
+  padding: 5rem 0 10rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+    min-height: 350px;
+  }
+
+  .hero__subtitle {
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 0.5rem;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .heroBanner {
+    padding: 2rem 0.5rem;
+    min-height: 300px;
+  }
+
+  .hero__subtitle {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* .buttons > * {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  } */
+}
+
+.hero__subtitle {
+  padding: 1rem 0;
+  width: 700px;
+  max-width: 100%;
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Additional responsive improvements */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
   }
 }
 
@@ -20,4 +83,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
